@@ -8,11 +8,12 @@
     <meta name="description" content="O site de revisão html é um repositório de tags e elementos html para revisão
     e estudo detalhado do que cada coisa faz um aplicação imediata" />
     <title>HTML Review</title>
+    <link rel="stylesheet" href="style.css">
     <!-- FIM DO HEAD --------------------------------------->
 </heand>
 <!--INICIO DO BODY ---------------------------------------- -->
 <body>
-<H1>HTML Review</H1>
+<H1 id="HTMLH1">HTML Review</H1>
 <p>HTML é uma linguagem de Marcação de textos, utilizada para estruturar a pagina web <br>
     é constituida por < TAGs >, < Elementos > das tags e < Atributos > <br>
     TAGs não são Case Sensitive
@@ -29,13 +30,27 @@
 <P> < head >  < / head > &emsp; cabeçalho sobre o site em si</P>
 <p> &emsp;< meta > &emsp;- Metadados sobre o site que não aparecem para o usuário inicialmente</p>
 <p> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;elementos: charset="UTF-8"; name="description" content="...descrição do site...";</p>
-<p> &emsp; < Title > - Titulo da pagina que ficara a mostra na Aba do navegador</p>
+<p> &emsp; < Title > < / Title >- Titulo da pagina que ficara a mostra na Aba do navegador</p>
+
+ <p>&emsp; < link> - link para outros arquivos <br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;   arquivo CSS ( <em> < rel="stylesheet" href="style.css"> </em>) <br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;   Fav icon ( <em> rel="icon" href="favicon.ico" type="image/x-icon" /> </em> ) <br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  TARGET="" especifica onde abrir o documento vinculado. <br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;    _self - Padrão. na mesma janela/guia em que foi clicado <br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;   _blank - Nova janela ou guia <br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;     To email: < a href="<i>mailto:</i>someone@example.com" > <br>
+
+Botão como link: < <i>button onclick=</i>"document.location='default.asp'"> Exmemple < / button >
+
+</p> 
+
+
 <hr> <!-- linha--------------------------------------------------------->
 <!-- COMEÇA O BODY ---------------------------------------------------->
 
-<p> < body > < /body > - Corpo do texto. O que efetivamente aparece na pagina web</p>
+<p><b>< body> < /body></b>  - Corpo do texto. O que efetivamente aparece na pagina web</p>
 
-<p > A tag <b> < h1 > < /h1 > </b> define um título grande - vai de 1 a 6<br> </p>
+<p > A tag <b> < h1 > < /h1 > </b> define um título/cabeçalho grande - vai de 1 a 6<br> 
 
 <p>    A tag <b> < p > < /p > </b> define um parágrafo <br>
     &emsp;&emsp;    elementos de 'p': <b>title</b>="tooltip"   <br></p>
@@ -44,7 +59,7 @@
 
 <p>    A tag <b> < hr > </b> define uma linha horizontal <br></p>
 
-<p>    A tag <b> < a > < /a > </b> define um link <br>
+<p>    A tag <b> < a > < /a > </b> define um link/ancora <br>
     &emsp;&emsp;    elementos de "a": <b>href="www..."</b> = <b>H</b>iperlink <b>Ref</b>erence <br></p>
 
 <p>    A tag <b> < img > </b> define uma imagem <br>
@@ -52,6 +67,43 @@
     &emsp;&emsp;     src= source / indica o caminho do arquivo (path) // Absolutos (links externos) Relativos (links internos) </p>
     
 <p>A tag <b> < pre > </b> exibe um texto pre formatado, com fonte menor e com auto quebra </p>
+
+<!-- CITAÇÕES  - QUOTATIONS-->
+<P><B>Tags de Citação "" (quotation)</B></P>
+<p> 
+    < blockquote >, -- bloco com a citação de outra fonte (indentada)     <br>
+    < q >,          -- citações curtas, <q>já entre aspas</q>            <br>
+    < abbr >,       -- Abreviação <abbr title="World Health Organization">WHO</abbr>    <br>
+    < address >,    -- informações de contato -em italico  <br>
+
+</p>
+<!-- BOOK MARK - MARCADORES DE PAGINA --------------------->
+<P><b>Marcadores de Pagina</b></P>
+<p>Primeiro se cria um marcador (ID - #) e depois um link para ele  <br>
+ &emsp;  < h2 <u>id="C4"</u> > Capitulo 4 < / h2 > <br>
+&emsp;   < a <u>href="#C4"</u>> Jump to Chapter 4 < / a > - <a href="#HTMLH1">Inicio da pagina</a>
+</p>
+
+
+
+
+<!-- FORMATANDO ELEMENTOS DO TEXTO ----------------------------------------------->
+<p><strong>Formating Elements</strong></p>
+
+<P>
+ < b > - &emsp;&emsp;&emsp;  <b> - Bold text </b>                              <br>   
+ < strong >  &emsp;&emsp;  <strong> - Important text </strong>               <BR>   
+ < i > &emsp;&emsp;&emsp;  <i> - Italic text</i>                             <BR>    
+ < em >       &emsp;&emsp;  <em> - Emphasized text </em>                        <BR>    
+ < mark >     &emsp;&emsp;  <mark> - Marked text  </mark>                   <BR>    
+ < small >    &emsp;&emsp;  <small> - Smaller text </small>                 <BR>     
+ < del >      &emsp;&emsp;  <del> - Deleted text  </del>                      -<BR>    
+ < ins >      &emsp;&emsp;  <ins> - Inserted text   </ins>                     -<BR>  
+ < u >         &emsp;&emsp; <u> - underline text </u>                             <br>
+ < sub >      &emsp;&emsp;  <sub> - Subscript text   </sub>                    -<BR>    
+  < sup >     &emsp;&emsp;  <sup> - Superscript text  </sup>                    -<BR>    
+ 
+</P>
 
 
 <!-- OBSERVAÇÕES EXTRAR DE ELEMTNSO E TAGS  ALEATORIAS ---------------------------------------->
@@ -72,9 +124,15 @@
    <li>Use <b>font-size</b> for text sizes
    <li>Use <b>text-align</b> for text alignment
 </ul>
-
+<!-- TOLL TIP ------------>
 <P><strong>Toll tip</strong></P>
 <p> < p <u>title</u>="im a tool tip" > Hellow < /p > </p>
+
+<!-- ATALHOS ÚTEIS-->
+<p><strong>Atalho p/ Criação de Classes e ID para CSS</strong></p>
+<p> < p<b>.</b>nome-da-classe >  ---- < p class="alguma-classe"> </ p> </p>
+<p> < p<b>#</b>nome-da-ID >  -------  < p id="alguma-id"> </ p> </p>
+
 </body>
 
 </html>
