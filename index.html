@@ -9,11 +9,19 @@
     e estudo detalhado do que cada coisa faz um aplicação imediata" />
     <title>HTML Review</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
     <!-- FIM DO HEAD --------------------------------------->
 </heand>
 <!--INICIO DO BODY ---------------------------------------- -->
 <body>
-<H1 id="HTMLH1">HTML Review</H1>
+<table>
+    <tr>
+        <td><img src="images/html1.png" width="70"></img></td>
+        <td><H1 id="HTMLH1">HTML Review</H1></td>
+    </tr>
+</table>
+
 <p>HTML é uma linguagem de Marcação de textos, utilizada para estruturar a pagina web <br>
     é constituida por < TAGs >, < Elementos > das tags e < Atributos > <br>
     TAGs não são Case Sensitive
@@ -23,16 +31,16 @@
 <!-- TAGS INICIAIS DO DOCUMENTO HTML-->
 
 <h3>Tags iniciais</h3>       
-<p>"< !DOCTYPE html" > - o tipo do documento para reconhecimento do browser</p>
+<p> < <b>!DOCTYPE html</b> > - o tipo do documento para reconhecimento do browser</p>
 <hr>
-<p> < HTML lang="pt-BR">  < /html> &emsp;'language' linguagem reconhecida pelos apps que utilizarem o site</p>
+<p> <b> < HTML lang="pt-BR"> </b> < /html> &emsp;'language' linguagem reconhecida pelos apps que utilizarem o site</p>
 
-<P> < head >  < / head > &emsp; cabeçalho sobre o site em si</P>
-<p> &emsp;< meta > &emsp;- Metadados sobre o site que não aparecem para o usuário inicialmente</p>
+<P> <b> < head> </b> < / head > &emsp; cabeçalho sobre o site em si</P>
+<p> &emsp; <b> < meta> </b>&emsp;- Metadados sobre o site que não aparecem para o usuário inicialmente</p>
 <p> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;elementos: charset="UTF-8"; name="description" content="...descrição do site...";</p>
-<p> &emsp; < Title > < / Title >- Titulo da pagina que ficara a mostra na Aba do navegador</p>
+<p> &emsp; <b> < Title> </b>< / Title >- Titulo da pagina que ficara a mostra na Aba do navegador</p>
 
- <p>&emsp; < link> - link para outros arquivos <br>
+ <p>&emsp; <b> < link> </b>  - link para outros arquivos <br>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;   arquivo CSS ( <em> < rel="stylesheet" href="style.css"> </em>) <br>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;   Fav icon ( <em> rel="icon" href="favicon.ico" type="image/x-icon" /> </em> ) <br>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  TARGET="" especifica onde abrir o documento vinculado. <br>
@@ -62,12 +70,102 @@ Botão como link: < <i>button onclick=</i>"document.location='default.asp'"> Exm
 <p>    A tag <b> < a > < /a > </b> define um link/ancora <br>
     &emsp;&emsp;    elementos de "a": <b>href="www..."</b> = <b>H</b>iperlink <b>Ref</b>erence <br></p>
 
-<p>    A tag <b> < img > </b> define uma imagem <br>
-    &emsp;&emsp;     elementos de 'img': <b>src</b>="link"; <b>alt</b>="descrição-da-img" ; <b>width</b> ="largura" ; <b>height</b>="altura" <br>
-    &emsp;&emsp;     src= source / indica o caminho do arquivo (path) // Absolutos (links externos) Relativos (links internos) </p>
-    
-<p>A tag <b> < pre > </b> exibe um texto pre formatado, com fonte menor e com auto quebra </p>
+<p>A tag <b> < pre> </b> exibe um texto pre formatado, com fonte menor e com auto quebra </p>
 
+<p>    A tag <b> < img > </b> define uma imagem <br>
+    &emsp;&emsp;     elementos de 'img': <b>src</b>="link"; <b>alt</b>="descrição-da-img" ;c/ style="" <b>width</b> ="largura" ; <b>height</b>="altura" <img src="imagens/html1.png" alt="imagem-html-1" width="40px" height="40"> <br>
+    &emsp;&emsp;     src= source / indica o caminho do arquivo (path) // Absolutos (links externos) Relativos (links internos) 
+     </p>
+   
+<P>    &emsp;&emsp; < map > < /map > - imagem com areas clicáveis, < area >; < usemap >; </P>
+
+<p> A tag <b> < picture > </b> permite mostrar imagens diferente em aparelhos diferentes <br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;   (+ Largura de banda e formato do arquivo) </p>
+            
+<pre>       < picture>
+                < <b>source media=</b>"(min-width: 650px)" <b>srcset</b>="img_food.jpg">
+                < <b>source media=</b>"(min-width: 465px)" <b>srcset</b>="img_car.jpg">
+                < <b>img src</b>="img_girl.jpg">
+      < / picture>
+</pre>
+
+<br>
+<HR>
+<!-- LISTAS - ORDENADAS E DESORDENASDAS ------------------------>
+<p><b>Listas</b></p>
+<p><b>OL - Ordenadas</b> // podem ser aninhadas (nested) <br>
+< ol >
+< li >
+</p>
+
+<pre> Tipos (type=" ")                          Contagem (start=" ")
+              1 - numeros (default)                        qlq numero
+              A - Maiúsculas (uppdercase)
+              a - Minúsculas (lowercase)
+              I - Romanas maiúsculas 
+              i - Romanas minúsculas 
+</pre>
+
+<p><b>UL - Desordenadas</b> //  <br>
+    < ul>
+        < li>
+</p>
+
+<pre> CSS ( style="list-style-type:     " )
+                              disc
+                              circle
+                              square
+                              none
+</pre>
+
+<table>
+    <tr>
+        <th> An Unordered List </th>
+        <th>An Ordered List </th>
+    </tr>
+    <tr>
+        <td>
+                <ul>
+                    <li>Coffee</li>
+                    <li>Tea</li>
+                    <li>Milk</li>
+                </ul>
+      </td>
+
+        <td>  
+                <ol>
+                    <li>Coffee</li>
+                    <li>Tea</li>
+                    <li>Milk</li>
+                </ol>
+        </td>
+    </tr>
+</table>
+
+<p><b>A Description List (dl)</b> <br>
+< dl > - Lista de descrição <br>
+&emsp; < dt > - define o Termo (nome) <br>
+&emsp;&emsp;< dd > - Descreve
+</p>
+
+<dl>
+    <dt>Coffee</dt>
+    <dd>- black hot drink</dd>
+    <dt>Milk</dt>
+    <dd>- white cold drink</dd>
+</dl>
+
+
+
+
+
+
+<hr>
+<!-- TOPICO ESPECIFICO PARA TABLES - -->
+<P><strong>Tables</strong></P>
+<br>
+<hr>
+<br>
 <!-- CITAÇÕES  - QUOTATIONS-->
 <P><B>Tags de Citação "" (quotation)</B></P>
 <p> 
@@ -126,7 +224,7 @@ Botão como link: < <i>button onclick=</i>"document.location='default.asp'"> Exm
 </ul>
 <!-- TOLL TIP ------------>
 <P><strong>Toll tip</strong></P>
-<p> < p <u>title</u>="im a tool tip" > Hellow < /p > </p>
+<p title="im a tool tip"> < p <u>title</u>="im a tool tip" > Hellow < /p > </p>
 
 <!-- ATALHOS ÚTEIS-->
 <p><strong>Atalho p/ Criação de Classes e ID para CSS</strong></p>
