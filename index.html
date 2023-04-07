@@ -33,6 +33,7 @@
 <h3>Tags iniciais</h3>       
 <p> < <b>!DOCTYPE html</b> > - o tipo do documento para reconhecimento do browser</p>
 <hr>
+<!-- HTML LANG E ETC --------------------------------------->
 <p> <b> < HTML lang="pt-BR"> </b> < /html> &emsp;'language' linguagem reconhecida pelos apps que utilizarem o site</p>
 
 <P> <b> < head> </b> < / head > &emsp; cabeçalho sobre o site em si</P>
@@ -49,9 +50,8 @@
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;     To email: < a href="<i>mailto:</i>someone@example.com" > <br>
 
 Botão como link: < <i>button onclick=</i>"document.location='default.asp'"> Exmemple < / button >
-
 </p> 
-
+ <P> O elemento <b>< s cript></b>  é utlizado para linkar programas em JS no texto html </p>
 
 <hr> <!-- linha--------------------------------------------------------->
 <!-- COMEÇA O BODY ---------------------------------------------------->
@@ -73,7 +73,7 @@ Botão como link: < <i>button onclick=</i>"document.location='default.asp'"> Exm
 <p>A tag <b> < pre> </b> exibe um texto pre formatado, com fonte menor e com auto quebra </p>
 
 <p>    A tag <b> < img > </b> define uma imagem <br>
-    &emsp;&emsp;     elementos de 'img': <b>src</b>="link"; <b>alt</b>="descrição-da-img" ;c/ style="" <b>width</b> ="largura" ; <b>height</b>="altura" <img src="imagens/html1.png" alt="imagem-html-1" width="40px" height="40"> <br>
+    &emsp;&emsp;     elementos de 'img': <b>src</b>="link"; <b>alt</b>="descrição-da-img" ;c/ style="" <b>width</b> ="largura" ; <b>height</b>="altura" <img src="images/html1.png" alt="imagem-html-1" width="40px" height="40"> <br>
     &emsp;&emsp;     src= source / indica o caminho do arquivo (path) // Absolutos (links externos) Relativos (links internos) 
      </p>
    
@@ -156,10 +156,6 @@ Botão como link: < <i>button onclick=</i>"document.location='default.asp'"> Exm
 </dl>
 
 
-
-
-
-
 <hr>
 <!-- TOPICO ESPECIFICO PARA TABLES - -->
 <P><strong>Tables</strong></P>
@@ -183,8 +179,6 @@ Botão como link: < <i>button onclick=</i>"document.location='default.asp'"> Exm
 </p>
 
 
-
-
 <!-- FORMATANDO ELEMENTOS DO TEXTO ----------------------------------------------->
 <p><strong>Formating Elements</strong></p>
 
@@ -203,6 +197,58 @@ Botão como link: < <i>button onclick=</i>"document.location='default.asp'"> Exm
  
 </P>
 
+<!-- BLOCK AND INLINE ELEMENTS -------------------------------->
+<P><B>Elementos em Blocos(Blocks) e Embutidos (Inline) - <i>não semânticos</i></B></P>
+<div style="border: 1px solid black">Hello - DIV - World</div>
+<span style="border: 1px solid black">Hello - SPAN - World</span>
+
+<p>Elemento <b> < div> </b> -ocupa todo o block (full width); guarda outros elementos HTML; divisão/seção <br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;     Outros: h1-6, p, pre, ol/ul/li, form, table, section, article, video,
+</p>
+
+<p>Elemento <b> < span> </b>  - utiliza apenas o espaço necessário, <span style="color:blue;"> só parte</span> do texto <br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;     outros: a, img, b, i, strong, em, q, var, cite, input/output, textarea,
+</p>
+
+<!-- CLASSES E ID ---------------------------------------------->
+<P><b>.Classes </b></P>
+<p> Apotam para um nome de classe(.) especifico no texto para se fazer edições posteriores <br>
+selecionar e acessar elementos no CSS e JS <i>(getElementsByClassName())</i> <br>
+é CaSe SenSitiVe <br>
+pode ser usado em qualquer elemento HTML <br>
+Diferentes elementos HTML podem apontar para o mesmo nome de classe
+</p>
+<pre> < div class="city" > 
+            < h2 > London < /h2 >
+        < /div >
+        
+    .city {
+    background-color: lightblue
+        }
+</pre>
+
+<p><b>#ID</b></p>
+<p>Especificar um unico < id > para um elemento HTML <br>
+não poder ter mais <u>um</u> de um elemento com o mesmo id <br>
+Criar Marcadores de pagina (Bookamrks) - < id> and < a href=" > <br>
+utilizados por CSS e JS <i>(getElementById())</i>
+</p>
+<pre> < h1 id="myHeader">  My Cities  < /h1 >
+
+    #myHeader {
+      background-color: lightblue;
+    }
+</pre>
+<hr>
+
+<p><b>IFRAME - quadro / estrutura </b></p>
+<p> < iframe > incorporar outro documento no documento HTML atual.</p>
+<pre> < iframe src="url" title="description"> < /iframe > 
+    < <u>iframe src</u>="demo_iframe.htm" <u>style</u>="height:200px;width:300px;" <u>title</u>="Iframe Example"> < /iframe >
+</pre>
+<iframe src="/home/harus/Documents/cursos-udemy/web_dev_bootcamp/vscode_webdev_udemy/reviewhtml-site/demo-iframe.html" style="height:130px;width:300px;" title="Iframe Example"> </iframe>
+<iframe src="../demo-iframe.html"  style="height:130px;width:300px;" title="Iframe Example"> </iframe>
+   
 
 <!-- OBSERVAÇÕES EXTRAR DE ELEMTNSO E TAGS  ALEATORIAS ---------------------------------------->
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -213,6 +259,10 @@ Botão como link: < <i>button onclick=</i>"document.location='default.asp'"> Exm
     <li> Quatro espaços — Digite:&emsp; & e<b>m</b>sp;
     <li> Recuo — Digite:&emsp;  & nbsp;& nbsp;& nbsp;& nbsp;
 </ul>
+<p> © copyright (& copy) ; (& #169);<br>
+    ® registered trademark (& reg); (& #174);
+</p>
+
 
 <P>Elementos comuns: <b>style</b>="color:red"/</P>
 <ul>
